@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500;700&display=swap");
 
 /* color 블루 (#1AADEC) 핑크 (#EC325F) */
+/* index 메인화면 css */
 body {
   font-family: "Ubuntu", sans-serif;
 }
@@ -207,6 +208,76 @@ footer {
   font-weight: 300px;
 }
 
+/* 로그인화면 */
+.login-header {
+  background-color: #ec325f;
+  height: 50px;
+}
+.login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.login-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login-logo > a > img {
+  width: 80px;
+  height: 80px;
+}
+.loginForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.loginForm > input {
+  width: 250px;
+  margin-bottom: 5px;
+  padding: 10px 20px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  background-color: #fcfcfc;
+}
+.loginForm > input::placeholder {
+  font-size: 13px;
+  color: #b1b1b1;
+}
+.loginForm > input:focus {
+  outline: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.loginForm > input[type="submit"] {
+  width: 100%;
+  border: 0;
+  padding: 10px 0;
+  background-color: #1aadec;
+  color: white;
+  margin-top: 10px;
+}
+
+.login > a {
+  margin-top: 20px;
+  font-size: 12px;
+  text-decoration: underline;
+}
+.creat-account {
+  width: 300px;
+  border-top: 1px solid rgba(0, 0, 0, 0.5);
+  margin-top: 30px;
+}
+.creat-account > a > button {
+  background-color: #1aadec;
+  padding: 10px 0;
+  width: 100%;
+  border: 0;
+  margin-top: 30px;
+  color: white;
+}
 /* 핸드폰화면 750px 기준 */
 
 @media screen and (max-width: 750px) {

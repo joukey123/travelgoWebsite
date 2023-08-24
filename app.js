@@ -22,3 +22,5 @@ const sliderImg = () => {
 
 carousel();
 setInterval(carousel, 5000);
+
+//로그인 인사

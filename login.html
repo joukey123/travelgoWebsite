@@ -9,26 +9,26 @@
   </head>
   <body>
     <div id="container">
-      <header>
-        <div class="logo">
+      <header class="login-header"></header>
+      <main class="login">
+        <div class="login-logo">
           <a href="index.html"> <img src="img/logo.png" /></a>
           <h1 class="logo-title"><span>T</span>ravel<span>G</span>o</h1>
         </div>
-        <div class="where">
-          <input type="text" placeholder="어디로 놀러가세요?" />
+        <div>
+          <form class="loginForm">
+            <input type="text" placeholder="username" />
+            <input type="password" placeholder="password" />
+            <input type="submit" value="로그인" onClick="login() " />
+          </form>
         </div>
-
-        <div class="user">
-          <span><a href="" class="userJoin">회원가입</a></span>
-          <span><a href="login.html" class="userLogin">로그인</a></span>
+        <a href=""><p>비밀번호를 잊으셨나요?</p></a>
+        <div class="creat-account">
+          <a href=""
+            ><button>계정이 없으신가요? <span>가입하기</span></button>
+          </a>
         </div>
-      </header>
-
-      <main>
-        <form class="loginForm">
-          <input type="text" />
-          <input type="text" />
-        </form>
+        <span class="hidden"></span>
       </main>
 
       <footer>
