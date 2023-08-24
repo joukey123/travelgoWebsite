@@ -9,7 +9,9 @@
   </head>
   <body>
     <div id="container">
-      <header class="login-header"></header>
+      <header class="login-header">
+        <span class="hidden"></span>
+      </header>
       <main class="login">
         <div class="login-logo">
           <a href="index.html"> <img src="img/logo.png" /></a>
@@ -17,9 +19,13 @@
         </div>
         <div>
           <form class="loginForm">
-            <input type="text" placeholder="username" />
+            <input id="username" type="text" placeholder="username" />
             <input type="password" placeholder="password" />
-            <input type="submit" value="로그인" onClick="login() " />
+            <input
+              type="submit"
+              value="로그인"
+              onclick="login(); return false "
+            />
           </form>
         </div>
         <a href=""><p>비밀번호를 잊으셨나요?</p></a>
@@ -28,7 +34,6 @@
             ><button>계정이 없으신가요? <span>가입하기</span></button>
           </a>
         </div>
-        <span class="hidden"></span>
       </main>
 
       <footer>
@@ -36,6 +41,6 @@
       </footer>
     </div>
 
-    <script src="app.js"></script>
+    <script src="login.js"></script>
   </body>
 </html>
