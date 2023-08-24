@@ -1,0 +1,275 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500;700&display=swap");
+
+/* color 블루 (#1AADEC) 핑크 (#EC325F) */
+body {
+  font-family: "Ubuntu", sans-serif;
+}
+.hidden {
+  display: none;
+}
+#container {
+  max-width: 1440px;
+  margin: 0 auto;
+  color: rgb(40, 40, 40);
+}
+/* header */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+}
+/* header logo */
+.logo {
+  display: flex;
+  align-items: center;
+  width: 33%;
+}
+.logo > a > img {
+  width: 80px;
+  height: 80px;
+}
+.logo-title {
+  font-size: 32px;
+  margin-left: 10px;
+  font-weight: 700;
+}
+.logo-title span:first-child {
+  color: #ec325f;
+}
+.logo-title span:last-child {
+  color: #1aadec;
+  margin-left: 5px;
+}
+/* header input */
+.where {
+  width: 33%;
+}
+.where input[type="text"] {
+  border: 0;
+  width: 100%;
+  height: 35px;
+  border-radius: 20px;
+  text-align: center;
+  background-color: #eee;
+  margin-left: 35px;
+}
+.where input[type="text"]:focus {
+  outline: 2px solid #1aadec;
+}
+.where input[type="text"]::placeholder {
+  color: #b1b1b1;
+}
+/* header userBtn */
+.user {
+  width: 33%;
+  text-align: right;
+  font-size: 15px;
+}
+.user span:last-child {
+  color: white;
+}
+.userJoin {
+  margin-right: 20px;
+}
+.userLogin {
+  background-color: #ec325f;
+  color: white;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-weight: 700;
+}
+
+/* nav */
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 80px;
+  background-color: #1aadec;
+  border-radius: 20px 20px 0 0;
+}
+.menu > li {
+  width: 100%;
+  margin: 5px;
+  display: flex;
+}
+.menu > li > a {
+  width: 100%;
+  padding: 20px 10px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.menu > li:hover {
+  color: white;
+}
+
+/* main banner */
+.banner {
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  border-radius: 0 0 20px 20px;
+}
+.banner-contents {
+  position: relative;
+}
+.banner-contents > a > img {
+  filter: brightness(80%);
+}
+.banner-text {
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+  text-align: right;
+  position: absolute;
+  top: 150px;
+  right: 60px;
+  line-height: 50px;
+  text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.8);
+  display: flex;
+  flex-direction: column;
+}
+
+.banner-text > p {
+  margin-bottom: 10px;
+}
+.hashtag {
+  font-size: 18px;
+  width: 100px;
+  margin-right: 5px;
+  font-weight: 500;
+  border-radius: 20px;
+  padding: 5px 10px;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+}
+.blue {
+  background-color: #1aadec;
+}
+.pink {
+  background-color: #ec325f;
+}
+
+/* main lowPrice */
+.lowPrice {
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  overflow: hidden;
+  margin-top: 30px;
+}
+.lowPrice > h2 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  padding-left: 15px;
+}
+.lowPrice-img {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.lowPrice-img__contents > a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.lowPrice-img__contents > a > img {
+  min-width: 300px;
+  height: 150px;
+  border-radius: 20px;
+  object-fit: cover;
+  margin: 10px;
+}
+.lowPrice-img__contents > a > p {
+  width: 290px;
+  text-align: center;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.lowPrice-img__contents > a > p > span {
+  font-weight: 700;
+  margin-right: 5px;
+}
+
+/* footer */
+footer {
+  margin-top: 50px;
+  background-color: #eee;
+  text-align: center;
+  font-size: 15px;
+  padding: 20px 0;
+  color: #ccc8c8;
+  font-weight: 300px;
+}
+
+/* 핸드폰화면 750px 기준 */
+
+@media screen and (max-width: 750px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .logo,
+  .where,
+  .user {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .log {
+    order: -2;
+  }
+  .user {
+    order: -1;
+    margin-top: 0px;
+    background-color: #ec325f;
+    color: white;
+    padding: 10px 20px;
+    font-weight: 700;
+  }
+  .where {
+    margin-bottom: 50px;
+  }
+  .user span {
+    width: 50%;
+    text-align: center;
+  }
+  .where {
+    margin-left: -25px;
+  }
+  .userLogin {
+    background: none;
+  }
+
+  .menu {
+    flex-wrap: wrap;
+    justify-content: start;
+  }
+  .menu > li {
+    width: 46%;
+  }
+  .menu > li > a {
+    width: 100%;
+    padding: 10px;
+  }
+  .lowPrice-img {
+    flex-direction: column;
+  }
+  .lowPrice-img__contents {
+    margin-bottom: 20px;
+  }
+  .lowPrice-img__contents > a > img {
+    width: 100%;
+  }
+  .lowPrice-img__contents > a > p {
+    width: 100%;
+  }
+}
