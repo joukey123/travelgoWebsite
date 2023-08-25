@@ -22,3 +22,11 @@ const sliderImg = () => {
 
 carousel();
 setInterval(carousel, 5000);
+
+const menu = document.querySelectorAll(".menu li a");
+
+for (let i = 0; i < menu.length; i++) {
+  menu[i].addEventListener("click", () => {
+    alert("메뉴는 준비중");
+  });
+}
