@@ -160,7 +160,7 @@ header {
   flex-direction: column;
   align-items: baseline;
   overflow: hidden;
-  margin-top: 30px;
+  margin: 50px 0;
 }
 .lowPrice > h2 {
   font-size: 20px;
@@ -203,13 +203,13 @@ header {
 
 /* footer */
 footer {
-  margin-top: 50px;
   background-color: #eee;
   text-align: center;
   font-size: 15px;
   padding: 20px 0;
   color: #ccc8c8;
   font-weight: 300px;
+  padding: 10px 20px;
 }
 
 /* 로그인화면 */
@@ -225,7 +225,11 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 50px;
+  background: url("https://images.unsplash.com/photo-1436491865332-7a61a109cc05?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=874&q=80");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 85vh;
 }
 
 .login-logo {
@@ -309,7 +313,6 @@ footer {
   }
   .user {
     order: -1;
-    margin-top: 0px;
     background-color: #ec325f;
     color: white;
     padding: 10px 20px;
@@ -339,6 +342,10 @@ footer {
   .menu > li > a {
     width: 100%;
     padding: 10px;
+  }
+
+  .banner-contents > a > img {
+    transform: translateX(-100px);
   }
   .lowPrice-img {
     flex-direction: column;
